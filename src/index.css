@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 767px) {
+  th,
+  td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+td,
+th {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
